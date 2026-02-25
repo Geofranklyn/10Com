@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="guess.css">
+</head>
+<body>
+    <h1> Guessing Number Game </h1>
+    <p>Welcome to my number guessing game.
+        I have of a number between 1 and 100.
+        See if you can workout what it is.
+    </p>
+        <label> Enter a guess: </label>
+        <input type="number" id="guess" min="1" max="100" placeholder="Enter a number">
+    <div id="output"></div>
+    <button class="center" id="reset" onclick="reset()">Reset the Game</button>
+    <script src="guess.js"></script>
+    <script>
+        function reset() {
+            window.location.reload();
+        }
+    </script>
+</body>
+</html>
